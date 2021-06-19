@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <jlate id="my_temp" src="template/weblate_title.html" type="template">
+        Loading...
+      </jlate>
+
+      <jlate class="form-select form-select-lg mb-3" id="my_temp3" type="select">
+        Loading...
+      </jlate>
+
+      <jlate id="my_temp2" src="template/weblate_loop.html" type="template">
+        Loading...
+      </jlate>
+
+      <a class="wp-branding">Guru bhai</a>
+
+      <test-guru data='{"name":"guru"}'></test-guru>
+      <test-guru data='{"name":"dev"}'></test-guru>
+      <test-guru data='{"name":"webphonix"}'></test-guru>
+
+      <my-app id="test-weblate" ></my-app>
+      <!-- <my-app></my-app>
+      <my-app></my-app>
+      <my-app></my-app> -->
+
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/combine/npm/lodash,npm/weblate/weblate/weblate.min.js"></script> -->
+    <script src="../node_modules/lodash/lodash.min.js"></script>
+    <script src="../jlate/JLate.min.js"></script>
+    <!-- <script src="../weblate/weblate.js"></script> -->
+    <!-- <script src="../weblate/weblate.min.js"></script> -->
+    <script src="index_jlate.js"></script>
+  </body>
+</html>

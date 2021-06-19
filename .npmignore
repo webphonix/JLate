@@ -1,0 +1,8 @@
+node_modules/*
+package-lock.json
+notes.yaml
+test_project/*
+jlate/weblate.js
+jlate/jlate.js
+package.json
+.github/*
