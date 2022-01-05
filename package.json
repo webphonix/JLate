@@ -1,6 +1,6 @@
 {
   "name": "jlate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "New Born jlate: javascript framework to build dynamic template",
   "scripts": {
     "build": ""

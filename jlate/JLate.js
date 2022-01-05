@@ -1,12 +1,12 @@
 /*!
- * jlate JavaScript Library v0.0.1
+ * jlate JavaScript Library v0.0.2
  * https://webphonix.com/
  *
  *
  * Copyright webphonix
  * Released under the MIT license
  * Author: Gurudev Kumar
- * Date: 06-20-2021
+ * Date: 01-05-2022
  */
 
 (function() {
@@ -84,8 +84,7 @@ function load_custom_tag(filePath) {
         data=JSON.parse(data);
         var jlateFn = _.template(jlate_string);
         var jlateHTML = jlateFn(data);
-        e.insertAdjacentHTML("afterend", jlateHTML);
-        e.remove();
+        e.insertAdjacentHTML("beforeend", jlateHTML);
       });
     });
   });
@@ -147,8 +146,8 @@ function load_dynamic_template(i, dataObj) {
     file.text().then((content) => {
       var templateFn = _.template(content);
       var templateHTML = templateFn(dataObj);
-      i.insertAdjacentHTML("afterend", templateHTML);
-      i.remove();
+      i.innerHTML = "";
+      i.insertAdjacentHTML("beforeend", templateHTML);
     });
   });
 };
