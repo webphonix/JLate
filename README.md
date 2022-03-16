@@ -12,7 +12,7 @@ npm i jlate
 
 - CDN Available:
 ```
-<script src="https://cdn.jsdelivr.net/combine/npm/lodash,npm/jlate@0.0.1/jlate/JLate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/combine/npm/lodash,npm/jlate@0.0.2/jlate/JLate.min.js"></script>
 ```
 # jlate Example
 ## Example
